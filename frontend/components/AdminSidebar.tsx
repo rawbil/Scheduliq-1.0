@@ -2,8 +2,17 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Home, TrendingDown, TrendingUp, } from "react-feather";
-import { MdArrowBack, MdMenu, MdEmojiPeople, MdFilePresent, MdBook, MdCalendarMonth, MdChat, MdQuestionAnswer } from "react-icons/md";
+import { Home, TrendingDown, TrendingUp } from "react-feather";
+import {
+  MdArrowBack,
+  MdMenu,
+  MdEmojiPeople,
+  MdFilePresent,
+  MdBook,
+  MdCalendarMonth,
+  MdChat,
+  MdQuestionAnswer,
+} from "react-icons/md";
 import OutsideClickHandler from "react-outside-click-handler";
 
 export default function AdminSidebar() {
