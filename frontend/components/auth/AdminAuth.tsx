@@ -1,0 +1,65 @@
+"use client";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
+
+export default function AdminAuth() {
+  const [passwordOn, setPasswordOn] = useState(true);
+  const [data, setData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setData(prevData => ({...prevData, [name]: value}))
+  }
+
+  const router = useRouter();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    router.push('/admin')
+  }
+  
+  return (
+    <form onSubmit={handleSubmit} className="bg-white text-black max-w-lg mx-auto mt-[20vh] p-2 rounded-md shadow-sm shadow-purple">
+      <h2 className="text-center text-xl font-medium">Sign In</h2>
+      <div>
+        <input
+          className="border-b-[1.5px] border-slate-600 mb-5 p-2 outline-0 focus:border-black w-full"
+          type="email"
+          name="email"
+          placeholder="Enter email"
+          onChange={handleOnChange}
+          value={data.email}
+          required
+        />
+      </div>
+      <div className="relative">
+        <input
+          className="border-b-[1.5px] border-slate-600 mb-5 p-2 outline-0 focus:border-black w-full"
+          type={`${passwordOn ? "password" : "text"}`}
+          name="password"
+          id="password"
+          placeholder="Enter Password"
+          onChange={handleOnChange}
+          value={data.password}
+          required
+        />
+        {!passwordOn ? (
+          <FaEyeSlash className="absolute top-1/4 right-4 cursor-pointer text-slate-600"
+          onClick={() => setPasswordOn((prev) => !prev)} />
+        ) : (
+          <FaEye
+            className="absolute top-1/4 right-4 cursor-pointer text-slate-600"
+            onClick={() => setPasswordOn((prev) => !prev)}
+          />
+        )}
+      </div>
+
+      <button className="bg-purple p-2 rounded-md text-white grid mx-auto my-5 hover:bg-purple/90 ">Sign In</button>
+    </form>
+  );
+}
