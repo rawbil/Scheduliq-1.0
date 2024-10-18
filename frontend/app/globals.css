@@ -46,7 +46,7 @@
 @media (min-width: 768px) {
     .sidebar {
         position: relative;
-        width: 400px;
+        width: 350px;
         transform: translateX(0)
     }
 

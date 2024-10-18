@@ -40,7 +40,7 @@ export default function AdminSidebar() {
             onClick={() => setSidebarOpen(false)}
             tabIndex={1}
           />
-          <ul className="768px:pt-5 max-768px:pt-[60px] px-2 flex flex-col gap-5 pb-5">
+          <ul className="768px:pt-20 max-768px:pt-[60px] px-2 flex flex-col gap-5 pb-5">
             <li>
               <Link
                 href={"/admin"}
