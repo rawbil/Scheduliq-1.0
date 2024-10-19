@@ -28,7 +28,7 @@ export default function AdminSidebar() {
   return (
     <div className="pt-[10px] relative">
       <MdMenu
-        className="absolute left-6 outline rounded-md outline-slate-500 z-10 size-7 hover:bg-purple/50 hover:text-black cursor-pointer 768px:hidden"
+        className="fixed bg-default left-6 outline rounded-md outline-slate-500 z-10 size-7 hover:bg-purple/50 hover:text-black cursor-pointer 768px:hidden"
         onClick={() => setSidebarOpen(true)}
       />
       <OutsideClickHandler onOutsideClick={() => setSidebarOpen(false)}>
