@@ -25,6 +25,7 @@ const config: Config = {
         "230px": "230px",
         "420px": "420px",
         "768px": "768px",
+        "320px": "320px",
       }
     },
   },
