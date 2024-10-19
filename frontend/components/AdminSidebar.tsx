@@ -19,6 +19,7 @@ import {
   MdNotifications,
 } from "react-icons/md";
 import { SiBookstack } from "react-icons/si";
+import { TfiBlackboard } from "react-icons/tfi";
 import OutsideClickHandler from "react-outside-click-handler";
 
 export default function AdminSidebar() {
@@ -47,6 +48,15 @@ export default function AdminSidebar() {
                 className={`flex items-center py-1 rounded-lg px-1 gap-2 hover:text-gray ${pathname === "/admin" ? "bg-purple" : ""}`}
               >
                 <Home className="size-5" /> <span>Admin Dashboard</span>
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href={"/admin/classes"}
+                className={`flex items-center py-1 rounded-lg px-1 gap-2 hover:text-gray ${pathname === "/admin/classes" ? "bg-purple" : ""}`}
+              >
+                <TfiBlackboard className="size-5" /> <span>Classes</span>
               </Link>
             </li>
 
