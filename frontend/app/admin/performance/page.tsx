@@ -19,7 +19,7 @@ export default function Performance() {
         <li><span>C: </span><span>{grades.C}</span></li>
         <li><span>D: </span><span>{grades.D}</span></li>
         <li><span>E: </span><span>{grades.E}</span>
-        <span className="ml-3 text-red border-red border-2 px-1 py-1 rounded-md bg-white/80 animate-pingp">Passmark</span></li>
+        <span className="ml-3 text-red border-red border-2 px-1 py-1 rounded-md bg-white/80 animate-ping">Passmark</span></li>
        </ul>
        </div>
       </div>
