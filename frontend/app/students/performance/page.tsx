@@ -32,7 +32,7 @@ export default function StudentPerformance() {
   return (
     <div className="flex flex-col items-center justify-center p-4">
       <h1 className="text-2xl font-bold mb-4">Performance</h1>
-      <div className="w-full sm:w-3/4 lg:w-1/2 h-64 md:h-96">
+      <div className="w-full lg:w- h-64 md:h-96">
         <Line
           ref={chartRef}
           data={lineChartData}
@@ -45,11 +45,23 @@ export default function StudentPerformance() {
                 ticks: {
                   color: '#4B5563', // Tailwind Gray-600
                 },
+                border: {
+                    color: "#fff"
+                },
+                grid: {
+                    color: "#333"
+                }
               },
               x: {
                 ticks: {
                   color: '#4B5563', // Tailwind Gray-600
                 },
+                border: {
+                    color: "#fff"
+                },
+                grid: {
+                    color: "#333"
+                }
               },
             },
             plugins: {

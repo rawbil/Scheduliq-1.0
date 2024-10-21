@@ -24,6 +24,7 @@ export default function StudentExams() {
         borderWidth: 1, // Correct borderWidth to a number
         hoverBackgroundColor: "#0056b3",
         data: examData.results, // Data should be numerical
+        barThickness: 50
       },
     ],
   };
@@ -33,7 +34,27 @@ export default function StudentExams() {
       y: {
         beginAtZero: true, // Corrected the scales structure
         max: 100,
+        ticks: {
+            color: "white"
+        },
+        border: {
+            color: "#fff"
+        },
+        grid: {
+            color: "#333"
+        }
       },
+      x: {
+        ticks: {
+            color: "white"
+        },
+        border: {
+            color: "#fff"
+        },
+        grid: {
+            color: "#333"
+        }
+      }
     },
   };
 
@@ -46,7 +67,7 @@ export default function StudentExams() {
         </div>
       ))}
 
-<div className="w-full lg:w-2/3 xl:w-1/2 h-64 sm:h-72 md:h-80 lg:h-96 relative">
+<div className="w-full max-768px:w-full h-64 sm:h-72 md:h-80 lg:h-96 relative">
         <Bar ref={chartRef} data={barChartData} options={chartOptions} />
       </div>
     </div>
