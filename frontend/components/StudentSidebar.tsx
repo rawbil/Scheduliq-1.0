@@ -54,14 +54,14 @@ export default function StudentSidebar() {
               </Link>
             </li>
 
-            <li>
+{/*             <li>
               <Link
                 href={"/students/classes"}
                 className={`flex items-center py-1 rounded-lg px-1 gap-2 hover:text-gray ${pathname === "/students/classes" ? "bg-purple" : ""}`}
               >
                 <TfiBlackboard className="size-5" /> <span>Classes</span>
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <Link

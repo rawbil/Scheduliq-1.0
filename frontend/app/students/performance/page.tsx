@@ -2,6 +2,6 @@
 
 export default function StudentPerformance() {
     return (
-        <div>Student Performance</div>
+        <div className="max-768px:mt-10"></div>
     )
 }

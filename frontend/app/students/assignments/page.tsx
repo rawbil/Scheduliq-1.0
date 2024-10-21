@@ -2,6 +2,8 @@
 
 export default function StudentAssignments() {
     return (
-        <div>Student Assignments</div>
+        <div className="max-768px:mt-20">
+            <h2>Assignments</h2>
+        </div>
     )
 }
