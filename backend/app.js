@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+require('dotenv').config({ path: './config/.env' });
 
 //! error page
 app.use((req, res) => {
@@ -9,4 +9,4 @@ app.use((req, res) => {
 
 app.listen(5000, () => {
     console.log(`Server is listening on port 5000`);
-})
+}) 
