@@ -54,7 +54,7 @@ export default function TeacherSidebar() {
               </Link>
             </li>
 
-             <li>
+            <li>
               <Link
                 href={"/teachers/classes"}
                 className={`flex items-center py-1 rounded-lg px-1 gap-2 hover:text-gray ${pathname === "/teachers/classes" ? "bg-purple" : ""}`}
