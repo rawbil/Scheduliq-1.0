@@ -9,28 +9,28 @@ const Teachers = () => {
       <div className="grid grid-cols-3 justify-items-center mt-10 gap-[5%] max-540px:grid-cols-1">
         <section className="hover:scale-105 transition-all duration-200 cursor-text shadow shadow-red text-center bg-alt p-2 rounded-md w-[100%] flex flex-col items-center gap-[20px]">
           <h2 className="text-xl font-semibold font-serif text-gray pt-2.5">
-            Classes
+            Teacher Id
           </h2>
-          <p className="text-[22px] pb-2.5 text-orange font-semibold">5</p>
+          <p className="text-[22px] pb-2.5 text-orange font-semibold">13</p>
         </section>
         <section className="hover:scale-105 transition-all duration-200 cursor-text shadow shadow-red text-center bg-alt p-2 rounded-md w-[100%] flex flex-col items-center gap-[20px]">
           <h2 className="text-xl font-semibold font-serif text-gray pt-2.5">
-            Performance
+            Total Classes
           </h2>
-          <p className="text-[22px] pb-2.5 text-orange font-semibold">50</p>
+          <p className="text-[22px] pb-2.5 text-orange font-semibold">6</p>
         </section>
         <section className="hover:scale-105 transition-all duration-200 cursor-text shadow shadow-red text-center bg-alt p-2 rounded-md w-[100%] flex flex-col items-center gap-[20px]">
           <h2 className="text-xl font-semibold font-serif text-gray pt-2.5">
-            Semester
+            Total Students
           </h2>
-          <p className="text-[22px] pb-2.5 text-orange font-semibold">20</p>
+          <p className="text-[22px] pb-2.5 text-orange font-semibold">200</p>
         </section>
       </div>
       <div className="grid grid-cols-2 max-540px:grid-cols-1 justify-items-center mt-10">
-        {/* student performance */}
+        {/* Recent Activities */}
         <section>
           <h1 className="text-center text-xl text-orange">
-            Student Performance
+            Recent Activities
           </h1>
         </section>
         {/*Announcements */}
