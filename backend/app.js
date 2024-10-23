@@ -1,7 +1,14 @@
 const express = require('express');
 const app = express();
 require('dotenv').config({ path: './config/.env' });
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 8000;
+//mongoose;
+const mongoose = require('mongoose');
+mongoose.connect(process.env.MONGODB_URI)
+.then(() => {
+    console.log(`Database connected: ${mongoose.connection.host}`)
+})
+.catch(error => console.log(error))
 //routes
 const studentRoute = require('./routes/studentRoute');
 
