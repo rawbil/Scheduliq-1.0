@@ -1,6 +1,7 @@
 export default function StudentProfile() {
   const studentProfile = {
     name: "Bildad",
+    registrationNo: "bsdd/100c/2024",
     age: 20,
     grade: "A",
     school: "ICI",
@@ -16,6 +17,14 @@ export default function StudentProfile() {
           Name:{" "}
           <span className="text-gray font-medium">{studentProfile.name}</span>
         </p>
+
+        <p className="font-bold text-lg text-purple mb-5">
+          Registration No:{" "}
+          <span className="text-gray font-medium">
+            {studentProfile.registrationNo}
+          </span>
+        </p>
+
         <p className="font-bold text-lg text-purple mb-5">
           Age:{" "}
           <span className="text-gray font-medium">{studentProfile.age}</span>
