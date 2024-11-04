@@ -9,6 +9,7 @@ dbConnection();
 const studentRoute = require('./routes/studentRoute');
 const authRoute = require('./routes/authRoute');
 const eventRoute = require('./routes/eventRoute');
+const libraryRoute = require('./routes/libraryRoute');
 
 //END OF IMPORTS
 
@@ -18,6 +19,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.use('/students', studentRoute);
 app.use('/events', eventRoute);
+app.use('/library', libraryRoute);
 app.use('/users', authRoute);
 //default page
 app.get("/", (req, res) => {
