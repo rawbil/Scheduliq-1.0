@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-app.use('/student', studentRoute);
+app.use('/students', studentRoute);
 app.use('users', authRoute);
 //default page
 app.get("/", (req, res) => {
