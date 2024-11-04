@@ -21,7 +21,7 @@ export default function StudentAuth() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    router.push("/students/dashboard");
+    router.push("/students");
   };
 
   return (
