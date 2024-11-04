@@ -12,6 +12,7 @@ const eventRoute = require('./routes/eventRoute');
 const libraryRoute = require('./routes/libraryRoute');
 const announcementRoute = require('./routes/announcementRoute');
 const assignmentsRoute = require('./routes/assignmentsRoute');
+const attendanceRoute = require('./routes/attendanceRoute');
 
 //END OF IMPORTS
 
@@ -24,7 +25,8 @@ app.use('/events', eventRoute);
 app.use('/library', libraryRoute);
 app.use('/users', authRoute);
 app.use('/announcemnts', announcementRoute);
-app.use('/assignments', announcementRoute);
+app.use('/assignments', assignmentsRoute);
+app.use('/attendance', attendanceRoute);
 //default page
 app.get("/", (req, res) => {
     res.send('Welcome to the home page');
