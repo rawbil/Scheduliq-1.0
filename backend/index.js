@@ -8,6 +8,7 @@ dbConnection();
 //routes
 const studentRoute = require('./routes/studentRoute');
 const authRoute = require('./routes/authRoute');
+const eventRoute = require('./routes/eventRoute');
 
 //END OF IMPORTS
 
@@ -16,7 +17,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 app.use('/students', studentRoute);
-app.use('users', authRoute);
+app.use('/events', eventRoute);
+app.use('/users', authRoute);
 //default page
 app.get("/", (req, res) => {
     res.send('Welcome to the home page');

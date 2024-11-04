@@ -1,6 +1,5 @@
 const express = require('express');
 const route = express.Router();
-const authModel = require('../models/authModel');
-
+const eventModel = require('../models/eventModel');
 
 module.exports = route;
