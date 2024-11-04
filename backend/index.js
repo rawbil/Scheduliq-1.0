@@ -10,6 +10,7 @@ const studentRoute = require('./routes/studentRoute');
 const authRoute = require('./routes/authRoute');
 const eventRoute = require('./routes/eventRoute');
 const libraryRoute = require('./routes/libraryRoute');
+const announcementRoute = require('./routes/announcementRoute');
 
 //END OF IMPORTS
 
@@ -21,6 +22,7 @@ app.use('/students', studentRoute);
 app.use('/events', eventRoute);
 app.use('/library', libraryRoute);
 app.use('/users', authRoute);
+app.use('/announcemnts', announcementRoute);
 //default page
 app.get("/", (req, res) => {
     res.send('Welcome to the home page');
