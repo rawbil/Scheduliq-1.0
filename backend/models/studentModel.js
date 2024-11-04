@@ -11,23 +11,23 @@ const studentSchema = new Schema({
         required: true,
         unique: true,
     },
-    email: {
+/*     email: {
         type: String,
         required: true,
         unique: true,
-    },
+    }, */
     grade: {
         type: String,
         required: true
     },
-    school: {
+  /*   school: {
         type: String,
         required: true
     },
     age: {
         type: String,
         required: true,
-    }
+    } */
 },{timestamps: true});
 
 const studentModel = mongoose.model('Student', studentSchema);

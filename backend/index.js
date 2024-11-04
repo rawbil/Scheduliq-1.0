@@ -3,10 +3,8 @@ const app = express();
 require('dotenv').config({path: "./config/.env"})
 const PORT = process.env.PORT || 5000;
 const cors = require('cors');
-const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI)
-.then(() => console.log(`Database connected: ${mongoose.connection.host}`))
-.catch(error => console.log(error));
+const dbConnection = require('./dbConnection');
+dbConnection();
 //routes
 const studentRoute = require('./routes/studentRoute');
 const authRoute = require('./routes/authRoute');

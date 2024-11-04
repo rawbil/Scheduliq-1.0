@@ -38,10 +38,10 @@ route.get("/get", async(req, res) => {
         if(!students) {
             return res.json({success: false, message: "No students added"});
         }
-        res.status(200).json({success: true, message: "Students fetched successfully"});
+        res.status(200).json({success: true, message: "Students fetched successfully", students});
     } catch (error) {
         console.log(error);
-        res.status(500).json({success: false, message: "Error fetching students"})
+        res.status(500).json({success: false, message: "Error fetching students"});
     }
 })
 
